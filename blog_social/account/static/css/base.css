@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+a { color: #1a9e4b; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+#header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 12px 30px;
+  background: #16c060;
+  color: #fff;
+}
+
+#header a { color: #fff; }
+#header .logo { font-size: 22px; font-weight: bold; }
+
+#header .menu {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+}
+
+#header .menu li.selected a { font-weight: bold; text-decoration: underline; }
+
+#header .user {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#header .user form { margin: 0; }
+
+#header .user button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+#content {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-weight: normal;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+form p { margin: 14px 0; }
+
+input[type=text], input[type=password], input[type=email],
+input[type=date], input[type=file] {
+  padding: 6px;
+  background: #f0f0f0;
+  border: 1px solid #ddd;
+  width: 260px;
+}
+
+input[type=submit] {
+  background: #16c060;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.errorlist { color: #c00; padding-left: 18px; }
+.helptext { color: #888; font-size: 12px; }
+
+/* Mensagens (messages framework) */
+.messages { list-style: none; margin: 0; padding: 0; }
+.messages li { padding: 10px 30px; }
+.messages li.success { background: #dff6e4; color: #1a7a3a; }
+.messages li.error { background: #fbe0e0; color: #a11; }
+.image-preview { max-width: 300px; display: block; margin-bottom: 16px; }
